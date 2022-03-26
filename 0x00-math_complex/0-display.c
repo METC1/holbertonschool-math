@@ -14,5 +14,11 @@ void display_complex_number(complex c)
 		sign = '-';
 		c.im = c.im * -1;
 	}
-printf("%.0f %c %.0fi\n", c.re, sign,  c.im);
+	if (c.im == 1)
+	{
+		printf("%.0f %c i\n", c.re, sign);
+	} else
+	{
+		printf("%.0f %c %.0fi\n", c.re, sign,  c.im);
+	}
 }
