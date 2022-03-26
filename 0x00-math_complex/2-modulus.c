@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <math.h>
 /**
  * modulus - conjugate a complex number from structure
  * @c: complex number structure
