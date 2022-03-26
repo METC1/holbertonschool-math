@@ -14,5 +14,5 @@ void display_complex_number(complex c)
 		sign = '-';
 		c.im = c.im * -1;
 	}
-printf("%.0f %c  %.0fi\n", c.re, sign,  c.im);
+printf("%.0f %c %.0fi\n", c.re, sign,  c.im);
 }
