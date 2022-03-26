@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /**
  * display_complex_number - Display a complex number from structure
  * @c: complex number structure
@@ -5,5 +7,12 @@
  */
 void display_complex_number(complex c)
 {
-printf("%d + %di\n", c.re, c.im);
+	char sign = '+';
+
+	if (c.im < 0)
+	{
+		sign = '-';
+		c.im = c.im * -1;
+	}
+printf("%.0f %c  %.0fi\n", c.re, sign,  c.im);
 }
